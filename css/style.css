@@ -1,0 +1,18 @@
+body {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+#paragraph-result{
+  margin-top: 50px;
+}
+
+#paragraph-result-2{
+  margin-top: 5px;
+}
+
+#imc-result-text{
+  font-style: italic;
+  color: red;
+}
