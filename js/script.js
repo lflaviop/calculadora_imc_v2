@@ -16,15 +16,17 @@ function calculateImc(weight, height){
 }
 
 function imcResultText(imcValue){
-    if (imcValue >= 16 && imcValue <= 16.9){
+    if (imcValue < 16){
+        return 'Faixa inválida.'
+    }else if (imcValue >= 16 && imcValue <= 17){
         return 'Muito abaixo do peso.';
-    }else if (imcValue > 17 && imcValue <= 18.4){
+    }else if (imcValue > 17 && imcValue <= 18.5){
         return 'Abaixo do peso.';
-    }else if (imcValue > 18.5 && imcValue <= 24.9){
+    }else if (imcValue > 18.5 && imcValue <= 25){
         return 'Peso Normal.';
-    }else if (imcValue > 25 && imcValue <= 29.9){
+    }else if (imcValue > 25 && imcValue <= 30){
         return 'Acima do peso.';
-    }else if (imcValue > 30 && imcValue <= 34.9){
+    }else if (imcValue > 30 && imcValue <= 35){
         return 'Obesidade Grau I.';
     }else if (imcValue > 35 && imcValue <= 40){
         return 'Obesidade Grau II.';
